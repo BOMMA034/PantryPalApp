@@ -19,6 +19,10 @@ jobs:
       uses: subosito/flutter-action@v2
       with:
         flutter-version: '3.22.1' 
+    - name: Check Dart & Flutter version
+      run: |
+        flutter --version
+        dart --version
 
     - name: Install dependencies
       run: flutter pub get
@@ -28,9 +32,4 @@ jobs:
 
     - name: Run tests
       run: flutter test
-
-    - name: Check Dart & Flutter versions
-      run: |
-        flutter --version
-        dart --version
 
