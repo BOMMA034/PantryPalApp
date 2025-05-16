@@ -28,3 +28,9 @@ jobs:
 
     - name: Run tests
       run: flutter test
+
+    - name: Check Dart & Flutter versions
+      run: |
+        flutter --version
+        dart --version
+
